@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ratnagiri Tourism</title>
+	<style type="text/css">
+
+		* {
+			margin: 0;
+			scroll-behavior: smooth;
+			font-family: sans-serif;
+		}
+		body::-webkit-scrollbar {
+  			display: none;
+		}
+		.slider::-webkit-scrollbar {
+  			display: none;
+		}
+		.nav .nav_list {
+			position: relative;
+			left: 67%;
+			bottom: 20px;
+			color: black;
+			text-decoration: none;
+			margin-left: 20px;
+		}
+		body {
+			overflow-x: hidden;
+		}
+		nav {
+			background-color: rgba(255, 255, 255, 0.2);
+		}
+		.bg {
+			background-image: url(img/8.jpg);
+			background-size: cover;
+			height: 100vh;
+			background-attachment: fixed;
+			opacity: 0.9;
+		}
+		.logo {
+			position: relative;
+			left: 50px;
+		}
+		.heading {
+			position: absolute;
+			transform: translate(-50% -50%);
+			left: 30%;
+			top: 30%;
+			color: #1D5D9B;
+			font-size: 15vh;
+			margin-top: 75vh;
+		}
+		.cards {
+			margin-top: 100vh;
+		}
+		.card2 {
+			margin-top: -50px;
+		}
+		.card3 {
+			
+		}
+		.cards .img {
+			margin-left: 30px;
+		}
+		.cards2 .img {
+			position: relative;
+			left: 700px;
+			margin-left: 700px;
+		}
+		.exp_btn {
+			color: white;
+			font-family: sans-serif;
+			padding: 20px 30px;
+			border-radius:5px;
+			background-color: #1D5D9B;
+			position: relative;
+			left: 46%;
+			top: 400px;
+			text-decoration: none;
+		}
+		.caard_heading {
+			position: relative;
+			font-size: 60px;
+			left: 55%;
+			top: -300px;
+		}
+		.desc {
+			width: 50%;
+			position: relative;
+			font-size: 20px;
+			left: 45%;
+			top: -255px;
+		}
+		.taketop {
+			margin-top: -170px;
+		}
+		.p_t_v  {
+			font-size: 70px;
+			position: relative;
+			left: 38%;
+		}
+		.footer {
+			background-color: black;
+			color: white;
+			height: 30px;
+		}
+		.fot {
+			padding: 5px;
+		}
+		.bt {
+			padding: 20px 30px;
+			font-size: 20px;
+			background-color: #1D5D9B;
+			border: none;
+			border-radius: 5px;
+			color: white;
+			margin-top: 50px;
+			margin-bottom: 30px;
+		}
+	
+		.btn {
+			margin-left: 10px;
+			margin-right: 10px;
+			border: none;
+			padding: 10px 20px;
+		}
+		.slider {
+			display: flex;
+			overflow-x: scroll;
+			gap: 5px;
+		}
+		.main_heading {
+			font-size: 150px;
+			color: rgba(255, 255, 255, 0.5);
+			position: relative;
+			left: 25%;
+			top: 100px;
+		}
+
+		.button {
+			position: relative;
+			left: 45%;
+			top: 300px;
+			display: inline-block;
+			cursor: pointer;
+			outline: none;
+			border: 0;
+			vertical-align: middle;
+			text-decoration: none;
+			background: transparent;
+			padding: 0;
+			font-size: inherit;
+			font-family: inherit;
+		}
+
+		.button.learn-more {
+			width: 12rem;
+			height: auto;
+		}
+
+		.button.learn-more .circle {
+			transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+			position: relative;
+			display: block;
+			margin: 0;
+			width: 3rem;
+			height: 3rem;
+			background: #000000;
+			border-radius: 1.625rem;
+		}
+
+		.button.learn-more .circle .icon {
+			transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			background: #fff;
+		}
+
+		.button.learn-more .circle .icon.arrow {
+			transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+			left: 0.625rem;
+			width: 1.125rem;
+			height: 0.125rem;
+			background: none;
+		}
+
+		.button.learn-more .circle .icon.arrow::before {
+			position: absolute;
+			content: "";
+			top: -0.29rem;
+			right: 0.0625rem;
+			width: 0.625rem;
+			height: 0.625rem;
+			border-top: 0.125rem solid #fff;
+			border-right: 0.125rem solid #fff;
+			transform: rotate(45deg);
+		}
+
+		.button.learn-more .button-text {
+			transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+			position: absolute;
+			top: 0;
+			left: 20px;
+			width: 150px;
+			right: 0;
+			bottom: 0;
+			padding: 0.75rem 0;
+			margin: 0 0 0 1.85rem;
+			color: #000000;
+			font-weight: 700;
+			line-height: 1.6;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		.button:hover .circle {
+			width: 110%;
+		}
+
+		.button:hover .circle .icon.arrow {
+			background: #fff;
+			transform: translate(1rem, 0);
+		}
+
+		.button:hover .button-text {
+			color: #fff;
+		}
+		.map {
+			width: 200vh;
+		}
+	</style>
+</head>
+<body>
+	<section  class="bg" >
+		<div class="nav">
+			<nav>
+				<a href="#" class="logo"><img src="img/logo.png" width="50"></a>
+				<a href="" class="nav_list">Home</a>
+				<a href="#heading" class="nav_list">Details</a>
+				<a href="#places" class="nav_list">Places</a>
+				<a href="#" class="nav_list">Reviews</a>
+				<a href="" class="nav_list">Contact</a>
+			</nav>
+		</div>
+		<section>
+			<div>
+				<h1 class="main_heading">𝐑𝐀𝐓𝐍𝐀𝐆𝐈𝐑𝐈</h1>
+			</div>
+			<div class="main">
+				<a href="#heading"><button class="learn-more button"><span class="circle" aria-hidden="true"><span class="icon arrow"></span></span><span class="button-text">EXPLORE PLACES</span></button></a>
+				<!-- <a href="#heading" class="exp_btn">EXPLORE</a> -->
+			</div>
+			<div>
+				<h1 class="heading" id="heading">RATNAGIRI</h1>
+				<div class="cards">
+					<a href="dir/place1.html"><img src="img/4.jpg" class="img" width="600"></a>
+					<h1 class="caard_heading">Bhatye Beach</h1> 
+					<p class="desc">Bhatye is the biggest town in Konkan and one of the immediate suburbs of Ratnagiri town. A wonderful beach in the background of the jagged Sahyadri mountain ranges provides a panoramic view of the surroundings areas. The bluish water, vast expansion of silvery sands and the clean environs sprinkled with casuarinas, Bhatye beach gives exciting oppourtunities for water sports.The unpolluted air, clear sky, the vast expansion of bluish water, a quite evening, the lovely Bhatye beach is a perfect place to admire the romantic sunset.</p>
+				</div>
+				<div class="cards card2">
+					<a href="dir/place2.html"><img src="img/5.jpg" class="img" width="600"></a>
+					<h1 class="caard_heading">Ganpatipule</h1> 
+					<p class="desc">The temple of Swayambhu is frequented by thousands every year. The lord Ganesha at Ganpatipule is considered to be the Paschim Dwardevata (Western Sentinel God of India) and those visiting Ganpatipule make it a point to pay their respect to this deity. The 400 year old Ganpati idol at Ganpatipule is said to have sprung up from the earth. The temple is situated right on the beach at the base of a hill and devotes and pilgrims walk around the hill (1 km pradakshina) as a mark of respect.</p>
+				</div>
+				<div class="cards card2">
+					<a href="dir/place3.html"><img src="img/17.jpg" class="img" width="600"></a>
+					<h1 class="caard_heading">Thiba palace</h1> 
+					<p class="desc">The palace was built in 1910 by the British to house arrest the Burma King, Thiba. He was the last ruler of Brahmadesh (today's Myanmar), where he ruled for seven years. The British army took over Brahmadesh & captured his land. To keep an eye on his rebellious activities, the British transferred him to Madras (Chennai) & then to Ratnagiri. Around 30 years of his life, King Thiba was under house arrest. The history of this unfortunate King is heartbreaking and underlines importance of the Palace</p>
+				</div>
+				<div class="cards card2">
+					<a href="dir/place4.html"><img src="img/2.jpg" class="img" width="600"></a>
+					<h1 class="caard_heading taketop">Mandavi Beach</h1> 
+					<p class="desc">At a distance of 2 km from Ratnagiri Bus Stand, Mandavi Beach is located in the vicinity of Ratnagiri Town of Maharashtra. This is one of the most crowded beaches in Ratnagiri region. Mandavi Beach is blessed with beautiful seashore, which extends right up to Rajiwanda Port. This fabulous beach is surrounded by Ratnadurg Fort in the west and the majestic Arabian Sea to the south. The beach is known for its black sand and hence, the beach is often referred to as Black Sea. ratnagiri. Mandavi also has the Ratnagiri Jetty along with Gateway of Ratnagiri, which is a place for evening hang out. The Gateway of Ratnagiri is a preposterous structure with a slopped roof. The popular belief is that this structure is the work of the Pratinidhi Dhondu Bhaskar. It is a fabulous construction overlooking the majestic Arabian Sea and provides a unique opportunity to walk through the seashore and enjoy the cool breeze that gently flows from the sea.
+</p>
+				</div>
+			</div>
+		</section>
+		<div>
+			<h1 id="places"></h1>
+			<h1 class="p_t_v">Place To Visit</h1>
+		</div>
+		<div class="slider">
+			<a href="https://maps.app.goo.gl/tZ3VhMjSwFSx7VBa6"><img src="img/2.jpg" width="300" height="267"></a>
+			<a href="https://maps.app.goo.gl/BiydKoy8ET4qq4mx6"><img src="img/7.jpg" width="300"></a>
+			<a href="https://maps.app.goo.gl/Vs8SmXg63urw2H6V9"><img src="img/15.jpg" width="300" height="269"></a>
+			<a href="https://maps.app.goo.gl/BiydKoy8ET4qq4mx6"><img src="img/1.jpg" width="300" height="268"></a>
+			<a href="https://maps.app.goo.gl/qQFTPx9X1RamD5AC8"><img src="img/5.jpg" width="300" height="268"></a>
+			<a href="https://maps.app.goo.gl/BiydKoy8ET4qq4mx6"><img src="img/6.jpg" width="300" height="268"></a>
+			<a href="https://maps.app.goo.gl/G6QJa22PjMFFBk8VA"><img src="img/4.jpg" width="300" height="268"></a>
+			<a href="https://maps.app.goo.gl/tZ3VhMjSwFSx7VBa6"><img src="img/8.jpg" width="300" height="268"></a>
+			<a href="https://maps.app.goo.gl/N8UssG9iG6Tg6zHa9"><img src="img/3.jpg" width="300" height="268"></a>
+			<a href="https://maps.app.goo.gl/ESYetsRLfnCtTdVF9"><img src="img/10.jpg" width="300" height="268"></a>
+			<a href="https://maps.app.goo.gl/BiydKoy8ET4qq4mx6"><img src="img/11.jpg" width="300" height="268"></a>
+			<a href="https://maps.app.goo.gl/BiydKoy8ET4qq4mx6"><img src="img/12.jpg" width="300" height="268"></a>
+			<a href="https://maps.app.goo.gl/XfxE11cSs5ta37r18"><img src="img/13.jpg" width="300" height="268"></a>
+			<a href="https://maps.app.goo.gl/XfxE11cSs5ta37r18"><img src="img/14.jpg" width="300" height="268"></a>
+			<a href="https://maps.app.goo.gl/2qt8ZPyyX9PeAfNP8"><img src="img/9.jpg" width="300" height="268"></a>
+		</div>
+			<center><button class="btnp bt">Previous</button><button class="btn ">1</button><button class="btn">2</button><button class="btn">3</button><button class="btn">4</button><button class="btn">5</button><button class="btn">6</button>  <button class="btnn bt">Next</button>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61049.69124417657!2d73.28439723538209!3d16.993934559675917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bea0d1839a6bb7f%3A0x63ab969b79bf6561!2sRatnagiri%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1711039242536!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+			<div class="footer"><p class="fot"><center> This is created by jishaan ALL Copyrights @ jishaan | 21-03-2024</center></p></div></center>
+	</section>
+</body>
+</html>	
